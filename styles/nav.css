@@ -1,0 +1,40 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 9px 102px;
+
+    & .links-nav {
+        display: flex;
+        gap: 20px;
+    }
+
+    & .links-nav a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        font-weight: 400;
+        transition: color 0.2s ease-in-out;
+    }
+
+    & .links-nav a:hover {
+        color: var(--color-primary);
+    }
+
+    & .button-contact-nav button {
+        border: none;
+        border-radius: 10px;
+        padding: 5px 10px;
+        cursor: pointer;
+
+        color: white;
+        background-color: var(--color-primary);
+
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    & .button-contact-nav button:hover {
+        opacity: 0.8;
+    }
+}

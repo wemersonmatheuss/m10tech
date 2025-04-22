@@ -1,0 +1,18 @@
+header {
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-primary);
+    color: white;
+
+    & p {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    & span {
+        color: var(--color-discount);
+    }
+}

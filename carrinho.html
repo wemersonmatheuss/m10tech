@@ -3,30 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <title>Carrinho</title>
-    <link rel="stylesheet" href="./styles/carrinho.css"/>
+    <link rel="stylesheet" href="./styles/carrinho.css" />
   </head>
   <body>
     <header class="topo">
-        <div class="image-loja">
-            <img src="img/logo-inicio.png" alt="Logo da Loja" class="logo" />
-
-        </div>
-
-        
+      <div class="image-loja">
+        <img src="img/logo-inicio.png" alt="Logo da Loja" class="logo" />
+      </div>
     </header>
 
     <div class="title-loja">
-        <h1 class="titulo">Carrinho</h1>
-
+      <h1 class="titulo">Carrinho</h1>
     </div>
 
     <main>
       <div id="itensCarrinho" class="lista-carrinho"></div>
 
       <div class="resumo">
-        <label for="nomeCliente"><strong>Seu nome:</strong></label><br>
-        <input type="text" id="nomeCliente" placeholder="Digite seu nome" /><br><br>
-
+        <label for="nomeCliente"><strong>Seu nome:</strong></label
+        ><br />
+        <input
+          type="text"
+          id="nomeCliente"
+          placeholder="Digite seu nome"
+        /><br /><br />
 
         <p><strong>Total:</strong> <span id="totalCarrinho">R$ 0,00</span></p>
         <button class="btn-enviar" onclick="enviarPedido()">
@@ -36,83 +36,85 @@
     </main>
 
     <script>
-        // Recupera o carrinho salvo no localStorage
-        let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
-      
-        function renderCarrinho() {
-          const container = document.getElementById("itensCarrinho");
-          const totalEl = document.getElementById("totalCarrinho");
-          container.innerHTML = "";
-      
-          let total = 0;
-      
-          carrinho.forEach((item, index) => {
-            const div = document.createElement("div");
-            div.classList.add("item-carrinho");
-            div.innerHTML = `
+      // Recupera o carrinho salvo no localStorage
+      let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+
+      function renderCarrinho() {
+        const container = document.getElementById("itensCarrinho");
+        const totalEl = document.getElementById("totalCarrinho");
+        container.innerHTML = "";
+
+        let total = 0;
+
+        carrinho.forEach((item, index) => {
+          const div = document.createElement("div");
+          div.classList.add("item-carrinho");
+          div.innerHTML = `
               <img src="${item.imagem}" width="50">
               <p>${item.descricao}</p>
               <p>Cor: ${item.cor}</p>
               <p>${item.preco}</p>
               <button onclick="remover(${index})">🗑️</button>
             `;
-            container.appendChild(div);
-      
-            const precoNum = parseFloat(
-              item.preco.replace("R$", "").replace(",", ".")
-            );
-            total += precoNum;
-          });
-      
-          totalEl.textContent = `R$ ${total.toFixed(2).replace(".", ",")}`;
-        }
-      
-        function remover(index) {
-          carrinho.splice(index, 1);
-          localStorage.setItem("carrinho", JSON.stringify(carrinho));
-          renderCarrinho();
-        }
-      
-        function enviarPedido() {
-          const nome = document.getElementById("nomeCliente").value.trim();
-      
-          if (!nome) {
-            alert("Por favor, digite seu nome antes de enviar o pedido.");
-            return;
-          }
-      
-          if (carrinho.length === 0) {
-            alert("Seu carrinho está vazio!");
-            return;
-          }
-      
-          const imagemPrincipal = carrinho[0].imagem;
-      
-          let mensagem = `*Pedido de:* ${nome}\n\n Olá, M10Tech. Desejo fazer o seguinte pedido:\n\n`;
-          mensagem += `Imagem do produto: ${imagemPrincipal}\n\n`;
-      
-          let total = 0;
-      
-          carrinho.forEach((item) => {
-            mensagem += `Produto: ${item.descricao}\nCor: ${item.cor}\nPreço: ${item.preco}\n\n`;
-            const precoNum = parseFloat(
-              item.preco.replace("R$", "").replace(",", ".")
-            );
-            total += precoNum;
-          });
-      
-          mensagem += `*Total:* R$ ${total.toFixed(2).replace(".", ",")}`;
-      
-          const numero = "5512991548197"; // <- Substitua pelo seu número com DDD e país. Ex: 5511999999999
-          const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
-          window.open(url, "_blank");
-        }
-      
-        // Chama a função quando a página carrega
+          container.appendChild(div);
+
+          const precoNum = parseFloat(
+            item.preco.replace("R$", "").replace(",", ".")
+          );
+          total += precoNum;
+        });
+
+        totalEl.textContent = `R$ ${total.toFixed(2).replace(".", ",")}`;
+      }
+
+      function remover(index) {
+        carrinho.splice(index, 1);
+        localStorage.setItem("carrinho", JSON.stringify(carrinho));
         renderCarrinho();
-      </script>
-      
-      
-      
+      }
+
+      function enviarPedido() {
+        const nome = document.getElementById("nomeCliente").value.trim();
+
+        if (!nome) {
+          alert("Por favor, digite seu nome antes de enviar o pedido.");
+          return;
+        }
+
+        if (carrinho.length === 0) {
+          alert("Seu carrinho está vazio!");
+          return;
+        }
+
+        const imagemPrincipal = carrinho[0].imagem;
+
+        let mensagem = `*Pedido de:* ${nome}\n\n👋 Olá, M10Tech. Desejo fazer o seguinte pedido ⤵:\n\n`;
+        mensagem += `Imagem do produto: ${imagemPrincipal}\n\n`;
+
+        let total = 0;
+
+        carrinho.forEach((item) => {
+          mensagem += `✅ *Produto:* ${item.descricao}\n`;
+          mensagem += `🎨 *Cor:* ${item.cor}\n`;
+          mensagem += `💰 *Preço:* ${item.preco}\n\n`;
+
+          const precoNum = parseFloat(
+            item.preco.replace("R$", "").replace(",", ".")
+          );
+          total += precoNum;
+        });
+
+        mensagem += `🔢 *Total:* R$ ${total.toFixed(2).replace(".", ",")}`;
+
+        const numero = "5512991548197"; // <- Substitua pelo seu número com DDD e país. Ex: 5511999999999
+        const url = `https://wa.me/${numero}?text=${encodeURIComponent(
+          mensagem
+        )}`;
+        window.open(url, "_blank");
+      }
+
+      // Chama a função quando a página carrega
+      renderCarrinho();
+    </script>
   </body>
 </html>

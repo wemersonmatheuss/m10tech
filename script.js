@@ -8,10 +8,21 @@ const images = [
   const main = document.querySelector("main");
   
   function trocarImagem() {
-    main.style.backgroundImage = `url('${images[index]}')`;
-    index = (index + 1) % images.length;
+    // Faz o fade-out
+    main.style.opacity = 0.2;
+  
+    setTimeout(() => {
+      // Troca a imagem no meio da transição
+      main.style.backgroundImage = `url('${images[index]}')`;
+      // Faz o fade-in
+      main.style.opacity = 1;
+  
+      // Atualiza o índice
+      index = (index + 1) % images.length;
+    }, 1000); // mesmo tempo que o transition
   }
   
-  
-  trocarImagem();
-  setInterval(trocarImagem, 3000);
+  // Inicializa
+  main.style.backgroundImage = `url('${images[index]}')`;
+  index = (index + 1) % images.length;
+  setInterval(trocarImagem, 4000);

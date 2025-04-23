@@ -3,4 +3,6 @@ main {
     width: 100vw;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 1s ease-in-out;
 }

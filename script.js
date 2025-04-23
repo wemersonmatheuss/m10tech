@@ -26,3 +26,16 @@ const images = [
   main.style.backgroundImage = `url('${images[index]}')`;
   index = (index + 1) % images.length;
   setInterval(trocarImagem, 4000);
+
+
+
+
+  const container = document.getElementById('scroll-container');
+
+function scrollDireita() {
+  container.scrollBy({ left: 220, behavior: 'smooth' });
+}
+
+function scrollEsquerda() {
+  container.scrollBy({ left: -220, behavior: 'smooth' });
+}

@@ -12,3 +12,15 @@
     --color-primary: #0084FF;
     --color-discount: #FFD600;
 }
+
+.carrinho {
+    cursor: pointer;
+}
+
+.carrinho img{
+    width: 50px;
+    height: auto;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}

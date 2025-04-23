@@ -15,7 +15,7 @@
   
   .lista-produtos {
     display: flex;
-    overflow-x: auto;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     gap: 16px;
     padding: 10px;
@@ -53,10 +53,10 @@
     border: 2px solid #333;
   }
   
-  .radio.red .custom-radio { background-color: red; }
-  .radio.blue .custom-radio { background-color: blue; }
-  .radio.black .custom-radio { background-color: black; }
-  .radio.yellow .custom-radio { background-color: yellow; }
+  .radio.vermelho .custom-radio { background-color: red; }
+  .radio.azul .custom-radio { background-color: blue; }
+  .radio.preto .custom-radio { background-color: black; }
+  .radio.amarelo .custom-radio { background-color: yellow; }
 
   .radio input[type="radio"]:checked + .custom-radio {
     transform: scale(1.3); /* aumenta a bolinha */

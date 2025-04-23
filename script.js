@@ -39,3 +39,32 @@ function scrollDireita() {
 function scrollEsquerda() {
   container.scrollBy({ left: -220, behavior: 'smooth' });
 }
+
+
+
+
+
+const carrinho = [];
+
+  document.querySelectorAll('.produto button').forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+      const produto = btn.closest('.produto');
+      const imagem = produto.querySelector('img').src;
+      const descricao = produto.querySelector('h3').innerText;
+      const preco = produto.querySelector('p').innerText;
+      const corSelecionada = produto.querySelector('input[type="radio"]:checked')?.closest('label').classList[1];
+
+      if (!corSelecionada) {
+        alert("Selecione uma cor!");
+        return;
+      }
+
+      carrinho.push({ imagem, descricao, cor: corSelecionada, preco });
+      alert('Produto adicionado ao carrinho!');
+      localStorage.setItem('carrinho', JSON.stringify(carrinho));
+    });
+  });
+
+  document.querySelector('.carrinho').addEventListener('click', () => {
+    window.open('carrinho.html', '_blank');
+  });

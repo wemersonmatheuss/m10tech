@@ -1,40 +1,45 @@
-.produtos {
-    padding: 67px 91px 0px 91px;
-  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
-  .title-smartwaches-link {
+    font-family: "Poppins", sans-serif;
+
+}
+
+.main-container {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.title {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+    justify-content: center;
+    
+}
 
-  .title-smartwaches-link a {
-    text-decoration: none;
-    font-weight: 400;
-  }
-
-  .produtos h2 {
-    font-weight: 600;
+.title h1 {
     font-size: 30px;
-  }
-  
-  .container-produtos {
-    position: relative;
+    font-weight: 400;
+
+}
+
+.produtos {
     display: flex;
-    align-items: center;
-  }
-  
-  .lista-produtos {
+    flex-direction: column;
+    padding: 0 30px;
+    margin-top: 60px;
+}
+
+.lista-produtos {
     display: flex;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    gap: 16px;
-    padding: 10px;
-    max-width: 90vw;
-  }
-  
-  .produto {
-    max-width: 238px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.produto {
+    max-width: 330px;
     border: 1px solid #ccc;
     padding: 15px;
     background: white;
@@ -43,9 +48,9 @@
     flex-direction: column;
     gap: 8px;
     text-align: justify;
-  }
+}
 
-  .produto h3 {
+.produto h3 {
     font-weight: 300;
     font-size: 12px;
   }
@@ -92,7 +97,7 @@
 
   .produto button {
     border: none;
-    background-color: var(--color-primary);
+    background-color: #0084FF;
     color: white;
     padding: 10px;
     border-radius: 10px;
@@ -106,23 +111,10 @@
     opacity: 0.8;
   }
 
-  .seta {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    z-index: 1;
-  }
-
-  .seta img:hover {
-    width: 48px;
+  .image-ver-mais-smart img{
+    width: 50px;
     height: auto;
-  }
-  
-  .esquerda {
-    margin-right: -10px;
-  }
-  
-  .direita {
-    margin-left: -10px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
   }

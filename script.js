@@ -32,13 +32,13 @@ const images = [
 
   const container = document.getElementById('scroll-container');
 
-function scrollDireita() {
-  container.scrollBy({ left: 220, behavior: 'smooth' });
-}
+  function scrollDireita(id) {
+    document.getElementById(id).scrollBy({ left: 220, behavior: 'smooth' });
+  }
 
-function scrollEsquerda() {
-  container.scrollBy({ left: -220, behavior: 'smooth' });
-}
+  function scrollEsquerda(id) {
+    document.getElementById(id).scrollBy({ left: -220, behavior: 'smooth' });
+  }
 
 
 
@@ -67,4 +67,13 @@ const carrinho = [];
 
   document.querySelector('.carrinho').addEventListener('click', () => {
     window.open('carrinho.html', '_blank');
+  });
+
+
+  // Garante que cada grupo de radio tenha um "name" único por produto
+  document.querySelectorAll(".produto").forEach((produto, index) => {
+    const radios = produto.querySelectorAll("input[type='radio']");
+    radios.forEach((radio) => {
+      radio.name = `grupo${index}`;
+    });
   });

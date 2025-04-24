@@ -55,6 +55,11 @@
     font-size: 12px;
   }
 
+  .produto img {
+    width: 300px;
+    height: auto;
+  }
+
   .radio input[type="radio"] {
     display: none;
   }
@@ -117,4 +122,9 @@
     position: fixed;
     bottom: 40px;
     right: 40px;
+  }
+
+  .produto h3 strong {
+    font-size: 14px;
+    font-weight: 600;
   }

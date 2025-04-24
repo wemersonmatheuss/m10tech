@@ -34,7 +34,7 @@
   }
   
   .produto {
-    max-width: 238px;
+    max-width: 238px !important; 
     border: 1px solid #ccc;
     padding: 15px;
     background: white;
@@ -48,6 +48,16 @@
   .produto h3 {
     font-weight: 300;
     font-size: 12px;
+  }
+
+  .produto h3 strong {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .produto img {
+    width: 222px;
+    height: 222px;
   }
 
   .radio input[type="radio"] {

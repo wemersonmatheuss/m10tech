@@ -6,8 +6,9 @@
     font-family: "Poppins", sans-serif;
 }
 
-body {
+body, html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 
@@ -22,6 +23,18 @@ body {
 }
 
 .carrinho img{
+    width: 50px;
+    height: auto;
+    position: fixed;
+    bottom: 120px;
+    right: 40px;
+}
+
+.whatsapp {
+    cursor: pointer;
+}
+
+.whatsapp img{
     width: 50px;
     height: auto;
     position: fixed;

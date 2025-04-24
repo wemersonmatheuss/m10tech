@@ -3,6 +3,14 @@ const images = [
     "../../img/assets/banner-pulseira.svg",
     "../../img/assets/banner-fone.svg"
   ];
+
+  function buttonWhatsapp() {
+    const numero = "5512991548197"
+    const mensagem = "Olá! Tenho interesse nos seus produtos. 😊";
+
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`
+    window.open(url, `_blank`)
+  }
   
   let index = 0;
   const main = document.querySelector("main");

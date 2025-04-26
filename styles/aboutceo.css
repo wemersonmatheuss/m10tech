@@ -1,0 +1,35 @@
+.about-me {
+    margin-top: 67px;
+    display: flex;
+    align-items: center;
+    padding-inline: 217px;
+    gap: 21px;
+}
+
+.about-me .img-about-me img {
+    width: 350px;
+    height: auto;
+    border-radius: 100px;
+}
+
+.about-me .text-about-me {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+.about-me .text-about-me .title {
+    text-align: center;
+
+}
+
+.about-me .text-about-me .title h4 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.about-me .text-about-me .paragraph p {
+    font-size: 16px;
+    font-weight: 400;
+}

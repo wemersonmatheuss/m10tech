@@ -1,0 +1,73 @@
+footer {
+    margin-top: 50px;
+    padding: 60px 150px;
+    display: flex;
+    gap: 181px;
+    justify-content: space-between;
+    background-color: rgb(222, 222, 222);
+}
+
+footer .name {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .name h5 {
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 4px;
+    color: rgb(45, 45, 45);
+}
+
+footer .name .links-name {
+    display: flex;
+    gap: 15px;
+    
+}
+
+.infos {
+    display: flex;
+    gap: 100px;
+}
+
+.infos .saiba-mais{
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.infos .saiba-mais h3{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.infos .saiba-mais .links-saiba-mais {
+    display: flex;
+    flex-direction: column;
+}
+
+.infos .saiba-mais .links-saiba-mais a{
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.infos .saiba-mais .links-saiba-mais a:hover{
+    color: var(--color-primary);
+    transition: 0.2s ease-in-out;
+}
+
+.infos .saiba-mais .links-saiba-mais p{
+    color: black;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.infos .saiba-mais .links-saiba-mais p span{
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+

@@ -38,3 +38,23 @@ nav {
         opacity: 0.8;
     }
 }
+
+@media screen and (min-width: 767px) and (max-width: 991px){
+
+    nav {
+        padding: 9px 55px;
+    }
+
+    nav .logo-nav img {
+        width: 50px;
+        height: auto;
+    }
+
+    nav .links-nav a {
+        font-size: 14px;
+    }
+
+    nav .button-contact-nav button {
+        font-size: 14px;
+    }
+}

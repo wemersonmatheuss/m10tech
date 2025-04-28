@@ -6,3 +6,12 @@ main {
     background-repeat: no-repeat;
     transition: opacity 1s ease-in-out;
 }
+
+@media screen and (min-width: 767px) and (max-width: 991px){
+    main {
+        background-size: contain;
+        height: 280px;
+    }
+    
+    
+}

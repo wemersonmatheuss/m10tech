@@ -16,3 +16,9 @@ header {
         color: var(--color-discount);
     }
 }
+
+@media screen and (min-width: 767px) and (max-width: 991px){
+    header p {
+        font-size: 13px;
+    }
+}

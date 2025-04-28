@@ -32,3 +32,17 @@
     font-size: 16px;
     font-weight: 400;
 }
+
+@media screen and (min-width: 767px) and (max-width: 991px){
+    .about-m10 {
+        flex-direction: column;
+        padding-inline: 100px;
+    }
+
+    .about-m10 .img-about-m10 img {
+        width: 350px;
+        height: auto;
+    }
+    
+    
+}

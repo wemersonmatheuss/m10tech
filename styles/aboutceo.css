@@ -33,3 +33,18 @@
     font-size: 16px;
     font-weight: 400;
 }
+
+@media screen and (min-width: 767px) and (max-width: 991px){
+    .about-me {
+        flex-direction: column;
+        padding-inline: 100px;
+        margin-top: 37px;
+    }
+
+    .about-m10 .img-about-me img {
+        width: 250px;
+        height: 380px;
+    }
+    
+    
+}

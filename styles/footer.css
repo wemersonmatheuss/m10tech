@@ -71,3 +71,23 @@ footer .name .links-name {
     font-size: 14px;
 }
 
+@media screen and (min-width: 767px) and (max-width: 991px){
+    
+    footer {
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px;
+    }
+
+    footer .name h5 {
+        font-size: 30px;
+        
+    }
+
+    footer .links-name a img {
+        width: 22px;
+        height: 22px;
+    }
+    
+}
+

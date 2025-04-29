@@ -136,3 +136,9 @@
     bottom: 40px;
     right: 40px;
   }
+
+  @media screen and (min-width: 767px) and (max-width: 991px){
+    .main-container .title h1 {
+      font-size: 25px;
+    }
+}

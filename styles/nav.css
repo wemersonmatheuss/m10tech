@@ -58,3 +58,13 @@ nav {
         font-size: 14px;
     }
 }
+
+@media screen and (max-width: 480px) {
+    nav {
+        padding: 9px;
+    }
+
+    nav .links-nav {
+        gap: 5px;
+    }
+}

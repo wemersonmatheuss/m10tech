@@ -22,3 +22,14 @@ header {
         font-size: 13px;
     }
 }
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 5px;
+    }
+
+    header p {
+        font-size: 10px;
+        text-align: center;
+    }
+}

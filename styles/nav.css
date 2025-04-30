@@ -39,6 +39,10 @@ nav {
     }
 }
 
+nav .image-menu-mobile {
+    display: none;
+}
+
 @media screen and (min-width: 767px) and (max-width: 991px){
 
     nav {
@@ -61,10 +65,22 @@ nav {
 
 @media screen and (max-width: 480px) {
     nav {
-        padding: 9px;
+        padding: 9px 35px;
+    }
+
+    nav .logo-nav img{
+        width: 42px;
     }
 
     nav .links-nav {
-        gap: 5px;
+        display: none;
+    }
+
+    nav .button-contact-nav {
+        display: none;
+    }
+
+    nav .image-menu-mobile {
+        display: block;
     }
 }

@@ -85,3 +85,28 @@ const carrinho = [];
       radio.name = `grupo${index}`;
     });
   });
+
+
+  const openMenuBtn = document.getElementById("openMenu");
+  const closeMenuBtn = document.getElementById("closeMenu");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const menuLinks = mobileMenu.querySelectorAll("a");
+  
+  // Abre o menu
+  openMenuBtn.addEventListener("click", () => {
+
+    if (closeMenuBtn.style.display === "none") {
+      closeMenuBtn.style.display = "block"
+    }
+    mobileMenu.style.display = "flex";
+  });
+
+  closeMenuBtn.addEventListener("click", () =>{
+    if (closeMenuBtn.style.display === "block") {
+      closeMenuBtn.style.display = "none"
+    }
+
+    mobileMenu.style.display = "none"
+  })
+  
+  

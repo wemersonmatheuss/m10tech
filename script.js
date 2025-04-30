@@ -90,7 +90,7 @@ const carrinho = [];
   const openMenuBtn = document.getElementById("openMenu");
   const closeMenuBtn = document.getElementById("closeMenu");
   const mobileMenu = document.getElementById("mobileMenu");
-  const menuLinks = mobileMenu.querySelectorAll("a");
+  const menuLinks = document.getElementsByClassName("unidadeLink");
   
   // Abre o menu
   openMenuBtn.addEventListener("click", () => {
@@ -108,5 +108,11 @@ const carrinho = [];
 
     mobileMenu.style.display = "none"
   })
+
+  for (let i = 0; i < menuLinks.length; i++) {
+    menuLinks[i].addEventListener("click", () => {
+      mobileMenu.style.display = "none";
+    });
+  }
   
   

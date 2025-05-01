@@ -77,10 +77,9 @@ main {
   font-size: 25px;
 }
 
-
-
-@media screen and (max-width: 480px){
-  .image-loja img{
-    width: 1500px;
-  }
+.resumo input {
+  width: 260px;
+  height: 30px;
 }
+
+

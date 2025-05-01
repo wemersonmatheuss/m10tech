@@ -48,3 +48,28 @@
     
     
 }
+
+@media screen and (max-width: 480px){
+    .about-me {
+        margin-top: 0;
+        padding: 20px 12px;
+        flex-direction: column;
+    }
+
+    .about-me .img-about-me img {
+        width: 200px;
+        height: auto;
+    }
+
+    .about-me .text-about-me .title h4 {
+        font-size: 20px;
+    }
+
+    .about-me .text-about-me .paragraph p {
+        font-size: 14px;
+    }
+
+    .about-me .text-about-me {
+        gap: 22px;
+    }
+}

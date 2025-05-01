@@ -46,3 +46,28 @@
     
     
 }
+
+@media screen and (max-width: 480px){
+    .about-m10 {
+        margin-top: 0;
+        padding: 20px 12px;
+        flex-direction: column;
+    }
+
+    .about-m10 .img-about-m10 img {
+        width: 200px;
+        height: auto;
+    }
+
+    .about-m10 .text-about-m10 .title h4 {
+        font-size: 20px;
+    }
+
+    .about-m10 .text-about-m10 .paragraph p {
+        font-size: 14px;
+    }
+
+    .about-m10 .text-about-m10 {
+        gap: 22px;
+    }
+}

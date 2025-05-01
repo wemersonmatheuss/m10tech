@@ -6,34 +6,36 @@
     <link rel="stylesheet" href="./styles/carrinho.css" />
   </head>
   <body>
-    <header class="topo">
-      <div class="image-loja">
-        <img src="img/logo-inicio.png" alt="Logo da Loja" class="logo" />
-      </div>
-    </header>
+    <div class="main-containertwo">
+      <header class="topo">
+        <div class="image-loja">
+          <img src="img/logo-inicio.png" alt="Logo da Loja" class="logo" />
+        </div>
+      </header>
 
-    <div class="title-loja">
-      <h1 class="titulo">Carrinho</h1>
+      <div class="title-loja">
+        <h1 class="titulo">Carrinho</h1>
+      </div>
+
+      <main>
+        <div id="itensCarrinho" class="lista-carrinho"></div>
+
+        <div class="resumo">
+          <label for="nomeCliente"><strong>Seu nome:</strong></label
+          ><br />
+          <input
+            type="text"
+            id="nomeCliente"
+            placeholder="Digite seu nome"
+          /><br /><br />
+
+          <p><strong>Total:</strong> <span id="totalCarrinho">R$ 0,00</span></p>
+          <button class="btn-enviar" onclick="enviarPedido()">
+            Enviar pedido pelo WhatsApp
+          </button>
+        </div>
+      </main>
     </div>
-
-    <main>
-      <div id="itensCarrinho" class="lista-carrinho"></div>
-
-      <div class="resumo">
-        <label for="nomeCliente"><strong>Seu nome:</strong></label
-        ><br />
-        <input
-          type="text"
-          id="nomeCliente"
-          placeholder="Digite seu nome"
-        /><br /><br />
-
-        <p><strong>Total:</strong> <span id="totalCarrinho">R$ 0,00</span></p>
-        <button class="btn-enviar" onclick="enviarPedido()">
-          Enviar pedido pelo WhatsApp
-        </button>
-      </div>
-    </main>
 
     <script>
       // Recupera o carrinho salvo no localStorage

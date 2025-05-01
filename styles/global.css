@@ -31,7 +31,7 @@ html {
     width: 50px;
     height: auto;
     position: fixed;
-    bottom: 120px;
+    bottom: 90px;
     right: 40px;
 }
 
@@ -43,7 +43,19 @@ html {
     width: 50px;
     height: auto;
     position: fixed;
-    bottom: 40px;
+    bottom: 30px;
     right: 40px;
 }
 
+
+@media screen and (max-width: 480px){
+    .carrinho img{
+        width: 40px;
+        height: auto;
+    }
+
+    .whatsapp img {
+        width: 40px;
+        height: auto;
+    }
+}

@@ -4,7 +4,7 @@ footer {
     display: flex;
     gap: 181px;
     justify-content: space-between;
-    background-color: rgb(222, 222, 222);
+    background-color: var(--color-primary);
 }
 
 footer .name {
@@ -17,7 +17,7 @@ footer .name h5 {
     font-weight: 600;
     font-size: 40px;
     letter-spacing: 4px;
-    color: rgb(45, 45, 45);
+    color: white;
 }
 
 footer .name .links-name {
@@ -49,7 +49,7 @@ footer .name .links-name {
 
 .infos .saiba-mais .links-saiba-mais a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: 300;
     font-size: 14px;
 }
@@ -60,13 +60,13 @@ footer .name .links-name {
 }
 
 .infos .saiba-mais .links-saiba-mais p{
-    color: black;
+    color: white;
     font-weight: 300;
     font-size: 14px;
 }
 
 .infos .saiba-mais .links-saiba-mais p span{
-    color: black;
+    color: white;
     font-weight: 500;
     font-size: 14px;
 }
@@ -89,5 +89,55 @@ footer .name .links-name {
         height: 22px;
     }
     
+}
+
+@media screen and (max-width: 480px){
+    footer {
+        margin-top: 20px;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 10px;
+        
+    }
+
+    footer .name h5 {
+        font-weight: 500;
+        font-size: 25px;
+        letter-spacing: 4px;
+        color: white;
+    }
+
+    footer .name .links-name {
+        gap: 10px;
+    }
+
+    .infos .saiba-mais .links-saiba-mais {
+        gap: 6px;
+    }
+
+    .infos {
+        gap: 10px;
+    }
+
+    footer .name .links-name a img{
+        width: 25px;
+        height: auto;
+    }
+
+    footer .infos .saiba-mais h3{
+        font-size: 12px;
+    }
+
+    footer .infos .saiba-mais .links-saiba-mais a{
+        font-size: 12px;
+    }
+
+    footer .infos .saiba-mais .links-saiba-mais p {
+        font-size: 12px;
+    }
+
+    footer .infos .saiba-mais .links-saiba-mais p span{
+        font-size: 12px;
+    }
 }
 

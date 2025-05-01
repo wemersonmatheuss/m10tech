@@ -175,6 +175,10 @@
     padding: 20px 4px;
   }
 
+  .produtos .container-produtos .seta {
+    display: none;
+  }
+
   .produtos .title-smartwaches-link h2 {
     font-size: 18px;
   }

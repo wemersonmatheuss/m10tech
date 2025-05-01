@@ -200,11 +200,11 @@
   }
 
   .produtos .container-produtos .lista-produtos .produto h3{
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .produtos .container-produtos .lista-produtos .produto h3 strong{
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .produtos .container-produtos .lista-produtos .produto p:nth-child(5){

@@ -169,3 +169,37 @@
     font-size: 12px;
   }
 }
+
+@media screen and (max-width: 480px){
+  .produtos {
+    padding: 20px 4px;
+  }
+
+  .produtos .title-smartwaches-link h2 {
+    font-size: 18px;
+  }
+
+  .produtos .title-smartwaches-link a {
+    font-size: 12px;
+  }
+  .produtos .container-produtos .lista-produtos .produto img{
+    width: 120px;
+    height: 120px;
+  }
+
+  .produtos .container-produtos .lista-produtos .produto h3{
+    font-size: 10px;
+  }
+
+  .produtos .container-produtos .lista-produtos .produto h3 strong{
+    font-size: 12px;
+  }
+
+  .produtos .container-produtos .lista-produtos .produto p:nth-child(5){
+    font-size: 10px;
+  }
+
+  .produtos .container-produtos .lista-produtos .produto p:nth-child(5) span{
+    font-size: 12px;
+  }
+}

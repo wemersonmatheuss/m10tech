@@ -155,5 +155,18 @@
     .main-container .title h1 {
       font-size: 25px;
     }
+
+    .carrinho img{
+      width: 30px;
+      height: auto;
+      right: 20px;
+    }
+
+  .whatsapp img {
+      width: 30px;
+      height: auto;
+      right: 20px;
+
+    }
 }
 

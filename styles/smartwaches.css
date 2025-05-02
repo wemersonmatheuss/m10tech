@@ -227,4 +227,14 @@
   .produtos .container-produtos .lista-produtos .produto p:nth-child(5) span{
     font-size: 12px;
   }
+
+  .carrinho img{
+    width: 30px;
+    height: auto;
+  }
+
+  .whatsapp img {
+    width: 30px;
+    height: auto;
+  }
 }

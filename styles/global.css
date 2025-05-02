@@ -50,12 +50,15 @@ html {
 
 @media screen and (max-width: 480px){
     .carrinho img{
-        width: 40px;
+        width: 30px;
         height: auto;
+        right: 20px;
     }
 
     .whatsapp img {
         width: 30px;
         height: auto;
+        right: 20px;
+
     }
 }

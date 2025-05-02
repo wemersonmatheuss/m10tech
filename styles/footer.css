@@ -55,7 +55,7 @@ footer .name .links-name {
 }
 
 .infos .saiba-mais .links-saiba-mais a:hover{
-    color: var(--color-primary);
+    color: black;
     transition: 0.2s ease-in-out;
 }
 
@@ -69,6 +69,17 @@ footer .name .links-name {
     color: white;
     font-weight: 500;
     font-size: 14px;
+}
+
+.detail {
+    background-color: var(--color-primary);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.detail a {
+    color: yellow;
 }
 
 @media screen and (min-width: 767px) and (max-width: 991px){
@@ -137,6 +148,10 @@ footer .name .links-name {
     }
 
     footer .infos .saiba-mais .links-saiba-mais p span{
+        font-size: 12px;
+    }
+
+    .detail p {
         font-size: 12px;
     }
 }

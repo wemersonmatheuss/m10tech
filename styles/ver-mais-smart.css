@@ -161,16 +161,16 @@
 
 
   @media screen and (max-width: 480px){
-    .carrinho img{
+    #abrirCarrinho img{
       width: 30px;
       height: auto;
-      right: 20px;
+      right: 30px;
     }
 
-    .whatsapp img {
+    #whatsapp img {
       width: 30px;
       height: auto;
-      right: 20px;
+      right: 30px;
 
     }
   }

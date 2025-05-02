@@ -156,17 +156,21 @@
       font-size: 25px;
     }
 
+    
+  }
+
+
+  @media screen and (max-width: 480px){
     .carrinho img{
       width: 30px;
       height: auto;
       right: 20px;
     }
 
-  .whatsapp img {
+    .whatsapp img {
       width: 30px;
       height: auto;
       right: 20px;
 
     }
-}
-
+  }

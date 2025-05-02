@@ -80,7 +80,7 @@
   
   .radio.prata .custom-radio { 
     cursor: pointer;
-    background-color: #615f5f; 
+    background-color: #C0C0C0; 
   }
   .radio.azul .custom-radio { 
     cursor: pointer;
@@ -93,6 +93,16 @@
   .radio.rosa .custom-radio { 
     cursor: pointer;
     background-color: #fd89fdd8; 
+  }
+
+  .radio.dourado .custom-radio { 
+    cursor: pointer;
+    background-color: #efb810; 
+  }
+
+  .radio.verde .custom-radio { 
+    cursor: pointer;
+    background-color: #00881d; 
   }
 
   .radio input[type="radio"]:checked + .custom-radio {

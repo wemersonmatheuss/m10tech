@@ -112,6 +112,31 @@
     background-color: #ffffff;
   }
 
+  .radio.amarelo .custom-radio { 
+    cursor: pointer;
+    background-color: #fbff00;
+  }
+
+  .radio.cinza .custom-radio { 
+    cursor: pointer;
+    background-color: #808080;
+  }
+
+  .radio.laranja .custom-radio { 
+    cursor: pointer;
+    background-color: #FFA500
+  }
+
+  .radio.azul-marinho .custom-radio { 
+    cursor: pointer;
+    background-color: #120a8f;
+  }
+
+  .radio.vermelho .custom-radio { 
+    cursor: pointer;
+    background-color: #ff0000;
+  }
+
   .radio input[type="radio"]:checked + .custom-radio {
     transform: scale(1.3); /* aumenta a bolinha */
     box-shadow: 0 0 0 3px #4444;

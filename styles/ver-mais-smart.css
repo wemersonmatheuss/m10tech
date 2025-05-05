@@ -103,6 +103,26 @@
     background-color: white;
   }
 
+  .radio.amarelo .custom-radio { 
+    cursor: pointer;
+    background-color: #fbff00;
+  }
+
+  .radio.cinza .custom-radio { 
+    cursor: pointer;
+    background-color: #808080;
+  }
+
+  .radio.laranja .custom-radio { 
+    cursor: pointer;
+    background-color: #FFA500
+  }
+
+  .radio.azul-marinho .custom-radio { 
+    cursor: pointer;
+    background-color: #120a8f;
+  }
+
   
 
   .radio input[type="radio"]:checked + .custom-radio {

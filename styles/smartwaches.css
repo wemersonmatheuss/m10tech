@@ -254,7 +254,7 @@
     overflow-y: hidden;
     scroll-snap-type: x mandatory; 
     -webkit-overflow-scrolling: touch;
-    padding-left: 30px;
+    padding-left: 15px;
     gap: 7px;
   }
 

@@ -212,4 +212,12 @@
       right: 30px;
 
     }
+
+    .title h1 {
+      font-size: 18px;
+    }
+
+    .produtos {
+      margin-top: 45px;
+    }
   }

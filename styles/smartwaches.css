@@ -195,6 +195,12 @@
     margin-left: -10px;
   }
 
+  .produto p:nth-child(6) {
+    color: #0055ff;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
 @media screen and (min-width: 767px) and (max-width: 991px){
 
   .produtos{
@@ -225,6 +231,7 @@
   .produtos .container-produtos .lista-produtos .produto .comprar {
     font-size: 12px;
   }
+
 }
 
 @media screen and (max-width: 480px){

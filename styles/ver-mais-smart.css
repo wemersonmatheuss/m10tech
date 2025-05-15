@@ -189,6 +189,12 @@
     right: 40px;
   }
 
+  .produto p:nth-child(6) {
+    color: #0055ff;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
 
   @media screen and (min-width: 767px) and (max-width: 991px){
     .main-container .title h1 {

@@ -5,7 +5,7 @@ const images = [
   ];
 
   function buttonWhatsapp() {
-    const numero = "5512992592238"
+    const numero = "5512991548197"
     const mensagem = "Olá! Tenho interesse nos seus produtos. 😊";
 
     const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`
